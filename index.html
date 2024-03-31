@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="static/styles/style.css">
+    <title>TarkovPerformance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+
+
+  <header>
+
+    <nav class="menu">
+      
+      <div class="lootbox1">
+        <a href="index.html" class="menu-brand">TarkovPerformance</a>
+          <div>
+        
+        <div class="menu-wrap"> 
+          <ul class="menu-cont">
+            <input type="checkbox" id="checkbox-toggle">
+            <label for="checkbox-toggle" class="hamburger"><span class="hamburger-line"></span></label>
+            <div class="menuha">
+              <li><a href="index.html">ГЛАВНАЯ</a></li>
+              <li><a href="catalog.html">КАТАЛОГ УСЛУГ</a></li>
+              <li><a href="info.html">О НАС</a></li>
+              <li> 
+                <btn class="btn-custom" type="button" data-bs-toggle="modal" data-bs-target="#registrationModal">
+                  <span>ЛИЧНЫЙ КАБИНЕТ</span>
+                </btn>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+     <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="registrationModalLabel">Форма регистрации</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="username" class="form-label">Имя пользователя</label>
+                    <input type="text" class="form-control" id="username" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Электронная почта</label>
+                    <input type="email" class="form-control" id="email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Пароль</label>
+                    <input type="password" class="form-control" id="password" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>     
+  </header>
+
+
+  <body>
+
+    <header>
+      <h1>TarkovPerformance - отремонтируем всё!</h1>
+  </header>
+
+  <div class="lootboxchoose">
+    <h2>Выбор автомобиля</h2>
+    
+    <form id="carForm" action="#" method="post">
+        
+        <div class="form-group">
+            <label for="brand">Марка автомобиля:</label>
+            <select name="brand" id="brand">
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+                <option value="mercedes">Mercedes-Benz</option>
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="year">Год выпуска:</label>
+            <select name="year" id="year">
+                <option value="2018">2024</option>
+                <option value="2018">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+            </select>
+        </div>
+
+        <button type="submit">Подтвердить выбор</button>
+    
+    </form>
+</div>
+
+
+  <div class="cont2">
+  
+      <section>
+          <h2>Профессиональный ремонт и обслуживание вашего автомобиля</h2>
+          <p><strong>TarkovPerformance</strong> предлагает полный спектр услуг по ремонту и обслуживанию автомобилей любых марок и моделей. Наша команда квалифицированных специалистов с многолетним опытом готова предоставить вам высококачественный сервис по доступным ценам.</p>
+      </section>
+  
+      <section>
+        <h2>Наши услуги:</h2>
+          <ul id="MainServ">
+            <a class="usluga" href="TO.html"><li><strong>Техническое обслуживание</strong></a> - Регулярное техническое обслуживание для поддержания вашего автомобиля в отличном состоянии.</li>
+            <a class="usluga" href="engine.html"><li><strong>Диагностика и ремонт двигателя</strong></a> - Высокоточная диагностика и качественный ремонт двигателей любой сложности.</li>
+            <a class="usluga" href="tyres.html"><li><strong>Шиномонтаж и балансировка</strong></a> - Профессиональный шиномонтаж и балансировка колес для комфортной и безопасной езды.</li>
+            <a class="usluga" href="paint.html"><li><strong>Кузовной ремонт и покраска</strong></a> - Качественный кузовной ремонт, восстановление и покраска автомобиля.</li>
+            <a class="usluga" href="electrica.html"><li><strong>Электрика и электроника</strong></a> - Диагностика и ремонт электрических и электронных систем автомобиля.</li>
+            <a class="usluga" href="vihlop.html"><li><strong>Ремонт выхлопных систем</strong></a> - Устранение неполадок выхлопной системы любой сложности.</li>
+          </ul>
+      </section>
+  
+      <section>
+          <h2>Почему выбирают нас:</h2>
+          <ul>
+              <li><strong>Опытные специалисты</strong> - Наша команда состоит из профессионалов с многолетним опытом работы.</li>
+              <li><strong>Современное оборудование</strong> - Мы используем современное оборудование и качественные материалы для выполнения всех видов работ.</li>
+              <li><strong>Индивидуальный подход</strong> - Мы ценим каждого клиента и стремимся предложить индивидуальные решения, учитывая все ваши пожелания и потребности.</li>
+              <li><strong>Доступные цены</strong> - Качественный сервис по разумным ценам – у нас вы найдете оптимальное соотношение цены и качества.</li>
+          </ul>
+      </section>
+  
+
+
+  <footer>
+      <p>TarkovPerformance 2017-2024&copy; "Все права защищены"</p>
+  <footer>
+  
+    <script src="scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
